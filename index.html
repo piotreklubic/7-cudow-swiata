@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Piotr Bieniek">
+    <meta name="keywords" content="7 cudów świata, piramidy, Kolos Rodyjski, latarnia aleksandryjska, Świątynia Artemidy, posąg Zeusa, mauzoleum, wiszące ogrody">
+    <meta name="description" content="Strona prezentująca 7 Cudów Świata Antycznego z galerią, opisami i multimediami">
+    <title>7 Cudów Świata Antycznego</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nagłówek z animowanym logo -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-animation">
+                <div class="logo-part">7</div>
+                <div class="logo-part">Cudów</div>
+                <div class="logo-part">Świata</div>
+            </div>
+            <h1>Antycznego</h1>
+        </div>
+    </header>
+
+    <!-- Menu z trzema różnymi wersjami responsywnymi -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <!-- Wersja desktopowa (pionowa) -->
+            <ul class="nav-desktop">
+                <li><a href="#home"><i class="fas fa-home"></i> Strona główna</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Galeria</a></li>
+                <li><a href="#wonders-list"><i class="fas fa-list-ol"></i> Lista cudów</a></li>
+                <li><a href="#table"><i class="fas fa-table"></i> Informacje</a></li>
+                <li><a href="#form"><i class="fas fa-poll"></i> Ankieta</a></li>
+                <li><a href="#media"><i class="fas fa-film"></i> Multimedia</a></li>
+                <li><a href="#map"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
+            </ul>
+            
+            <!-- Wersja tabletowa (pozioma) -->
+            <div class="nav-tablet">
+                <a href="#home" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="#gallery" class="nav-icon"><i class="fas fa-images"></i></a>
+                <a href="#wonders-list" class="nav-icon"><i class="fas fa-list-ol"></i></a>
+                <a href="#table" class="nav-icon"><i class="fas fa-table"></i></a>
+                <a href="#form" class="nav-icon"><i class="fas fa-poll"></i></a>
+                <a href="#media" class="nav-icon"><i class="fas fa-film"></i></a>
+                <a href="#map" class="nav-icon"><i class="fas fa-map-marked-alt"></i></a>
+            </div>
+            
+            <!-- Wersja mobilna (hamburger) -->
+            <div class="nav-mobile">
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="mobile-menu" id="mobile-menu">
+                    <li><a href="#home"><i class="fas fa-home"></i> Strona główna</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Galeria</a></li>
+                    <li><a href="#wonders-list"><i class="fas fa-list-ol"></i> Lista cudów</a></li>
+                    <li><a href="#table"><i class="fas fa-table"></i> Informacje</a></li>
+                    <li><a href="#form"><i class="fas fa-poll"></i> Ankieta</a></li>
+                    <li><a href="#media"><i class="fas fa-film"></i> Multimedia</a></li>
+                    <li><a href="#map"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sekcja główna -->
+    <main>
+        <!-- Sekcja główna z wprowadzeniem -->
+        <section id="home" class="intro-section">
+            <h2>7 Cudów Świata Antycznego</h2>
+            <p>Siedem cudów świata starożytnego to lista najbardziej znanych budowli w starożytności. Były to wybitne dzieła architektury i sztuki, które budziły podziw współczesnych. Lista została ostatecznie ustalona w średniowieczu i obejmuje:</p>
+            
+            <div class="wonders-highlight">
+                <div class="wonder-highlight">Piramida Cheopsa</div>
+                <div class="wonder-highlight">Wiszące ogrody Semiramidy</div>
+                <div class="wonder-highlight">Świątynia Artemidy w Efezie</div>
+                <div class="wonder-highlight">Posąg Zeusa w Olimpii</div>
+                <div class="wonder-highlight">Mauzoleum w Halikarnasie</div>
+                <div class="wonder-highlight">Kolos Rodyjski</div>
+                <div class="wonder-highlight">Latarnia morska na Faros</div>
+            </div>
+            
+            <p class="note">Do dziś zachowała się tylko <strong>Piramida Cheopsa</strong> w Gizie. Pozostałe cuda zostały zniszczone przez kataklizmy, pożary lub działania wojenne.</p>
+        </section>
+
+        <!-- Automatyczna galeria zdjęć -->
+        <section id="gallery" class="gallery-section">
+            <h2>Galeria 7 Cudów Świata</h2>
+            <div class="gallery-container">
+                <div class="gallery-slide active">
+                    <img src="images/pyramid.jpg" alt="Piramida Cheopsa">
+                    <div class="slide-caption">Piramida Cheopsa - jedyny zachowany cud</div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/gardens.jpg" alt="Wiszące ogrody Semiramidy">
+                    <div class="slide-caption">Wiszące ogrody Semiramidy w Babilonie</div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/temple.jpg" alt="Świątynia Artemidy w Efezie">
+                    <div class="slide-caption">Świątynia Artemidy w Efezie</div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/zeus.jpg" alt="Posąg Zeusa w Olimpii">
+                    <div class="slide-caption">Posąg Zeusa w Olimpii</div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/mausoleum.jpg" alt="Mauzoleum w Halikarnasie">
+                    <div class="slide-caption">Mauzoleum w Halikarnasie</div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/colossus.jpg" alt="Kolos Rodyjski">
+                    <div class="slide-caption">Kolos Rodyjski</div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/lighthouse.jpg" alt="Latarnia morska na Faros">
+                    <div class="slide-caption">Latarnia morska na Faros w Aleksandrii</div>
+                </div>
+                
+                <div class="gallery-controls">
+                    <button class="gallery-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="gallery-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                        <span class="dot" data-slide="6"></span>
+                    </div>
+                    <button class="gallery-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista cudów z opisami -->
+        <section id="wonders-list" class="list-section">
+            <h2>Opisy 7 Cudów Świata</h2>
+            <div class="wonders-container">
+                <div class="wonder-item">
+                    <h3>1. Piramida Cheopsa</h3>
+                    <p>Jedyny zachowany do dziś cud świata, zbudowany ok. 2560 p.n.e. w Egipcie. Ma 146,6 m wysokości i przez 3800 lat była najwyższą budowlą na Ziemi. Piramida została zbudowana jako grobowiec faraona Cheopsa.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Piramida_Cheopsa" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="wonder-item">
+                    <h3>2. Wiszące ogrody Semiramidy</h3>
+                    <p>Zbudowane ok. 600 p.n.e. w Babilonie (dzisiejszy Irak). Według legendy stworzone przez króla Nabuchodonozora II dla jego żony Amytis. Były to tarasowe ogrody z systemem nawadniającym.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Wiszące_ogrody_Semiramidy" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="wonder-item">
+                    <h3>3. Świątynia Artemidy w Efezie</h3>
+                    <p>Zbudowana ok. 560 p.n.e. w Efezie (dzisiejsza Turcja). Była to ogromna świątynia z marmuru, poświęcona greckiej bogini Artemidzie. Zniszczona przez pożar w 356 p.n.e., odbudowana i ponownie zniszczona w 262 n.e.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Świątynia_Artemidy_w_Efezie" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="wonder-item">
+                    <h3>4. Posąg Zeusa w Olimpii</h3>
+                    <p>Stworzony ok. 430 p.n.e. przez Fidiasza w Olimpii (Grecja). Był to 12-metrowy posąg wykonany z kości słoniowej i złota, przedstawiający Zeusa na tronie. Zniszczony prawdopodobnie w pożarze w V wieku n.e.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Posąg_Zeusa_w_Olimpii" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="wonder-item">
+                    <h3>5. Mauzoleum w Halikarnasie</h3>
+                    <p>Zbudowane ok. 350 p.n.e. w Halikarnasie (dzisiejsza Turcja). Był to grobowiec Mauzolosa, perskiego satrapy. Miał 45 m wysokości i był bogato zdobiony płaskorzeźbami. Zniszczony przez trzęsienia ziemi między XII a XV wiekiem.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Mauzoleum_w_Halikarnasie" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="wonder-item">
+                    <h3>6. Kolos Rodyjski</h3>
+                    <p>Zbudowany ok. 280 p.n.e. na wyspie Rodos (Grecja). Był to 30-metrowy posąg z brązu przedstawiający boga słońca Heliosa. Zniszczony przez trzęsienie ziemi w 226 p.n.e., a następnie rozebrany w VII wieku.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Kolos_Rodyjski" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="wonder-item">
+                    <h3>7. Latarnia morska na Faros</h3>
+                    <p>Zbudowana ok. 280 p.n.e. w Aleksandrii (Egipt). Miała 120-140 m wysokości i była jedną z najwyższych budowli starożytności. Zniszczona przez trzęsienia ziemi w XIV wieku.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Latarnia_morska_na_Faros" target="_blank" class="external-link">Czytaj więcej na Wikipedii <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela z informacjami -->
+        <section id="table" class="table-section">
+            <h2>Informacje o 7 Cudach Świata</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cud świata</th>
+                            <th>Lokalizacja</th>
+                            <th>Data powstania</th>
+                            <th>Data zniszczenia</th>
+                            <th>Przyczyna zniszczenia</th>
+                            <th>Wysokość</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Piramida Cheopsa</td>
+                            <td>Giza, Egipt</td>
+                            <td>ok. 2560 p.n.e.</td>
+                            <td>— (istnieje)</td>
+                            <td>—</td>
+                            <td>146,6 m</td>
+                        </tr>
+                        <tr>
+                            <td>Wisłące ogrody Semiramidy</td>
+                            <td>Babilon, Irak</td>
+                            <td>ok. 600 p.n.e.</td>
+                            <td>I w. p.n.e.</td>
+                            <td>trzęsienie ziemi</td>
+                            <td>ok. 25 m</td>
+                        </tr>
+                        <tr>
+                            <td>Świątynia Artemidy w Efezie</td>
+                            <td>Efez, Turcja</td>
+                            <td>ok. 560 p.n.e.</td>
+                            <td>262 n.e.</td>
+                            <td>najazd Gotów</td>
+                            <td>ok. 18 m</td>
+                        </tr>
+                        <tr>
+                            <td>Posąg Zeusa w Olimpii</td>
+                            <td>Olimpia, Grecja</td>
+                            <td>ok. 430 p.n.e.</td>
+                            <td>V w. n.e.</td>
+                            <td>pożar</td>
+                            <td>12 m</td>
+                        </tr>
+                        <tr>
+                            <td>Mauzoleum w Halikarnasie</td>
+                            <td>Halikarnas, Turcja</td>
+                            <td>ok. 350 p.n.e.</td>
+                            <td>XII-XV w.</td>
+                            <td>trzęsienia ziemi</td>
+                            <td>45 m</td>
+                        </tr>
+                        <tr>
+                            <td>Kolos Rodyjski</td>
+                            <td>Rodos, Grecja</td>
+                            <td>ok. 280 p.n.e.</td>
+                            <td>226 p.n.e.</td>
+                            <td>trzęsienie ziemi</td>
+                            <td>30 m</td>
+                        </tr>
+                        <tr>
+                            <td>Latarnia morska na Faros</td>
+                            <td>Aleksandria, Egipt</td>
+                            <td>ok. 280 p.n.e.</td>
+                            <td>XIV w.</td>
+                            <td>trzęsienia ziemi</td>
+                            <td>120-140 m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formularz/ankieta -->
+        <section id="form" class="form-section">
+            <h2>Ankieta: Twój ulubiony cud świata</h2>
+            <form id="wonders-form">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Adres e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Wiek:</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                </div>
+                
+                <div class="form-group">
+                    <label>Który cud świata antycznego podoba Ci się najbardziej?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="pyramid" name="favorite" value="Piramida Cheopsa">
+                        <label for="pyramid">Piramida Cheopsa</label>
+                        
+                        <input type="radio" id="gardens" name="favorite" value="Wiszące ogrody Semiramidy">
+                        <label for="gardens">Wiszące ogrody Semiramidy</label>
+                        
+                        <input type="radio" id="temple" name="favorite" value="Świątynia Artemidy">
+                        <label for="temple">Świątynia Artemidy</label>
+                        
+                        <input type="radio" id="zeus" name="favorite" value="Posąg Zeusa">
+                        <label for="zeus">Posąg Zeusa</label>
+                        
+                        <input type="radio" id="mausoleum" name="favorite" value="Mauzoleum">
+                        <label for="mausoleum">Mauzoleum w Halikarnasie</label>
+                        
+                        <input type="radio" id="colossus" name="favorite" value="Kolos Rodyjski">
+                        <label for="colossus">Kolos Rodyjski</label>
+                        
+                        <input type="radio" id="lighthouse" name="favorite" value="Latarnia morska">
+                        <label for="lighthouse">Latarnia morska na Faros</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="visited">Które z tych miejsc chciałbyś/chciałabyś odwiedzić? (Możesz wybrać kilka):</label>
+                    <select id="visited" name="visited" multiple>
+                        <option value="Egipt">Egipt (Piramida)</option>
+                        <option value="Irak">Irak (Wiszące ogrody)</option>
+                        <option value="Turcja1">Turcja (Świątynia Artemidy)</option>
+                        <option value="Grecja1">Grecja (Posąg Zeusa)</option>
+                        <option value="Turcja2">Turcja (Mauzoleum)</option>
+                        <option value="Grecja2">Grecja (Kolos Rodyjski)</option>
+                        <option value="Egipt2">Egipt (Latarnia morska)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Dlaczego wybrałeś/wybrałaś właśnie ten cud?</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn submit-btn">Wyślij ankietę</button>
+                    <button type="reset" class="btn reset-btn">Wyczyść formularz</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sekcja z multimediami -->
+        <section id="media" class="media-section">
+            <h2>Multimedia</h2>
+            <div class="media-container">
+                <div class="media-item">
+                    <h3>Film o 7 Cudach Świata</h3>
+                    <div class="video-container">
+                        <video controls>
+                            <source src="media/7-wonders.mp4" type="video/mp4">
+                            Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+                        </video>
+                    </div>
+                    <p>Krótki film przedstawiający historię 7 cudów świata antycznego.</p>
+                </div>
+                
+                <div class="media-item">
+                    <h3>Muzyka starożytnego Egiptu</h3>
+                    <div class="audio-container">
+                        <audio controls>
+                            <source src="media/ancient-egypt.mp3" type="audio/mpeg">
+                            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+                        </audio>
+                    </div>
+                    <p>Przykład muzyki inspirowanej starożytnym Egiptem, gdzie znajduje się Piramida Cheopsa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa Google -->
+        <section id="map" class="map-section">
+            <h2>Mapa lokalizacji 7 Cudów Świata</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/place/Piramidy+w+Gizie/@29.9773008,31.1299206,17z/data=!3m1!4b1!4m6!3m5!1s0x14584f7de239bbcd:0xca7474355a6e368b!8m2!3d29.9772962!4d31.1324955!16s%2Fm%2F07s6gb8?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" width="100%" height="500"></iframe>
+                <p class="map-note">Mapa pokazuje lokalizacje wszystkich 7 cudów świata antycznego. Czerwone znaczniki oznaczają miejsca, w których znajdowały się te starożytne budowle.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Autor:</strong> Piotr Bieniek</p>
+                <p><strong>Klasa:</strong> 2Tb</p>
+                <p><strong>Przedmiot:</strong> Projektowanie stron internetowych</p>
+                <p><strong>Rok szkolny:</strong> 2024/2025</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Szybkie linki:</h3>
+                <ul>
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#form">Ankieta</a></li>
+                    <li><a href="#map">Mapa</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-validation">
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; 2025 Piotr Bieniek - 7 Cudów Świata Antycznego. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
